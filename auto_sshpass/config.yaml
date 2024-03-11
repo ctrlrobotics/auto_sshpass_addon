@@ -15,6 +15,9 @@ startup: application
 boot: auto
 init: false
 host_network: true
+map:
+  - 'config:rw'
+ 
 options:
   username:
     description: 'Username for SSH connection'
