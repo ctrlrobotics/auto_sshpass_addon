@@ -1,6 +1,8 @@
-name: SSH tunnel and forwarding using sshpass
+name: auto sshpass
 version: 1.0.0
 slug: auto_sshpass
+description: SSH tunnel and forwarding using sshpass
+url: "https://github.com/ctrlrobotics/auto_sshpass_addon"
 arch:
   - armhf
   - armv7
