@@ -1,6 +1,6 @@
 name: SSH tunnel and forwarding using sshpass
 version: 1.0.0
-slug: autosshpass
+slug: auto_sshpass
 arch:
   - armhf
   - armv7
