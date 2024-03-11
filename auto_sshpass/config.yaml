@@ -1,8 +1,10 @@
-name: auto sshpass
+name: Auto SSHPass
 version: 1.0.0
 slug: auto_sshpass
-description: SSH tunnel and forwarding using sshpass
-url: "https://github.com/ctrlrobotics/auto_sshpass_addon"
+description: |
+  SSH tunnel and forwarding using sshpass.
+  Configure username, hostname, password, and more for secure connections.
+url: 'https://github.com/ctrlrobotics/auto_sshpass_addon'
 arch:
   - armhf
   - armv7
@@ -14,13 +16,39 @@ boot: auto
 init: false
 host_network: true
 options:
-  username: ""
-  hostname: ""
-  password: ""
-  local_host: "0.0.0.0"
-  local_port: 8888
-  remote_host: "0.0.0.0"
-  remote_port: 8888
+  username:
+    description: 'Username for SSH connection'
+    default: ''
+    required: true
+    type: string
+  hostname:
+    description: 'Hostname or IP address for SSH connection'
+    default: ''
+    required: true
+    type: string
+  password:
+    description: 'Password for SSH connection'
+    default: ''
+    required: true
+    type: string
+  local_host:
+    description: 'Local host for tunneling (e.g., 0.0.0.0)'
+    default: '0.0.0.0'
+    type: string
+  local_port:
+    description: 'Local port for tunneling'
+    default: 8888
+    required: true
+    type: integer
+  remote_host:
+    description: 'Remote host for tunneling (e.g., 0.0.0.0)'
+    default: '0.0.0.0'
+    type: string
+  remote_port:
+    description: 'Remote port for tunneling'
+    default: 8888
+    required: true
+    type: integer
 schema:
   username: string
   hostname: string
