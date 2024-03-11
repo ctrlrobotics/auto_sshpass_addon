@@ -1,10 +1,10 @@
-name: Auto SSHPass
-version: 1.0.0
+name: Auto sshpass
+version: 1.2.1
 slug: auto_sshpass
 description: |
   SSH tunnel and forwarding using sshpass.
   Configure username, hostname, password, and more for secure connections.
-url: 'https://github.com/ctrlrobotics/auto_sshpass_addon'
+url: 'https://github.com/ctrlrobotics/auto_sshpass_addon/tree/main/auto_sshpass'
 arch:
   - armhf
   - armv7
