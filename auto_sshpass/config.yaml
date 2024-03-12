@@ -1,5 +1,5 @@
 name: Auto sshpass
-version: 1.2.1
+version: 1.0.1
 slug: auto_sshpass
 description: |
   SSH tunnel and forwarding using sshpass.
@@ -26,6 +26,7 @@ options:
   local_port: 8888
   remote_host: "0.0.0.0"
   remote_port: 8888
+  slack_webhook: ""
 schema:
   username: str
   hostname: str
@@ -34,3 +35,4 @@ schema:
   local_port: int
   remote_host: str
   remote_port: int
+  slack_webhook: str?
